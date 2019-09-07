@@ -1,2 +1,2 @@
-# FSJS Final Practice Exam
- FSJS Final Practice Exam
+# Techdegree Practice Exam
+ Practice Exam for Teamtree House Techdegree
