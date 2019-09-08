@@ -104,11 +104,16 @@ font-family:"Georgia", Arial, sans-serif;
     font-family:'Gabriola', serif;
     position: relative;
     margin: auto;
+    top: 10px;
+    left: 80px;
+    right: -420px;
+    bottom: -191px;
+    margin-top: 10px;
 	font-size:25px;
 	font-weight:bold;
     padding-top: 5px;
 	float:left;
-	left:30%;
+	left:10%;
 }
 
 .question {
@@ -155,7 +160,7 @@ font-family:"Georgia", Arial, sans-serif;
     font-family:'Verdana', serif;
 	font-weight:bold;
 	position:absolute;
-	top:80%;
-	left:30%;
+	top:20%;
+	left:50%;
 }
 /* End of Quiz Classes */
