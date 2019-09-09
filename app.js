@@ -385,7 +385,7 @@ function hideScore()
 function viewResults() 
 {
 
-	if(currentQuestion == 20) { currentQuestion = 0;return false; }
+	if(currentQuestion == 32) { currentQuestion = 0;return false; }
 	if(viewingAns == 1) { return false; }
 
 	hideScore();
