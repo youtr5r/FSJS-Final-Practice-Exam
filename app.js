@@ -44,7 +44,7 @@ var questions = [{
     correctAnswer: 3
 },{
 	question: "8. Does the integer 0 == false?",
-    choices: ["Yes. The will return True.", "No. This will return False."],
+    choices: ["Yes. This will return True.", "No. This will return False."],
     correctAnswer: 0
 },{
 	question: "9. A component can change the value of the props given to it.",
