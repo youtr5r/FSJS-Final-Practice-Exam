@@ -1,9 +1,9 @@
 var questions = [{
     question: "1. With Pega’s Situational Layer Cake ™ approach, how do you configure a regional variation for Human Resources time off cases? ",
-    choices: ["Create a rule for the variation and add the rule to the common layer of the application. ", "Create a rule for the variation and replace the existing HR time off rule in the application common layer", "TCreate a rule for the variation and add it to a secondary common application layer.", "Create a rule for the variation and add the rule to the layer for the region."],
+    choices: ["Create a rule for the variation and add the rule to the common layer of the application. ", "Create a rule for the variation and replace the existing HR time off rule in the application common layer", "Create a rule for the variation and add it to a secondary common application layer.", "Create a rule for the variation and add the rule to the layer for the region."],
     correctAnswer: 2
 }, {
-    question: "2. An organization has to lines of business: selling books for children and reselling college textbooks. The division selling books for children can use the same basic user interface (UI) as the reselling textbook with the exception of the payment methods. How do you apply the Situational Layer Cake™ in this scenario? ",
+    question: "2. An organization has two lines of business: selling books for children and reselling college textbooks. The division selling books for children can use the same basic user interface (UI) as the reselling textbook with the exception of the payment methods. How do you apply the Situational Layer Cake™ in this scenario? ",
     choices: [" Place the UI rules in the base layer, and create a new layer for the payment rules for both lines of business.", "Place the UI rules in the base layer, and create a parallel base layer for the payments rules.", "Place the UI rules and generic t method rules in the base layer, and create a new layer for the division-specific payment rules.", " Place the UI rules in the base layer, and create a new layer for the payment rule for each division."],
     correctAnswer: 3
 }, {
@@ -11,7 +11,7 @@ var questions = [{
     choices: ["Screen layout", "Column layout", "Dynamic layout", "Repeating layout"],
     correctAnswer: 2
 }, {
-    question: "4. An online sales application supports both laptop and mobile devices. You are configuring the application skin and you notice the responsive layout in the mobile device & not displaying views as stakeholders require. Which two options allow you to resolve this situation without negatively impacting the laptop users?",
+    question: "4. An online sales application supports both laptop and mobile devices. You are configuring the application skin and you notice the responsive layout in the mobile device are NOT displaying views as stakeholders require. Which two options allow you to resolve this situation without negatively impacting the laptop users?",
     choices: ["Use the same application skin in all portals. Update the process to give mobile users a separate portal. ", " Adjust the responsive behavior in the skin for optimal viewing in the mobile portal. Do not use a skin for the mobile application version."],
     correctAnswer: 1
 },{
@@ -81,7 +81,7 @@ var questions = [{
     choices: ["Verify the data page has the correct item prices. and  Verify the data transform copies the correct value from the data page to the shopping cart page", "Verify the price fields are displayed in the correct format. and Verify the order total cost property is accurately calculated."],
     correctAnswer: 0
 },{
-	question: "21.  An online retailer allows customers to select a courier service for deliveries. The list of available courier services is drawn from a data type sourced in the Pega database. The Fulfillment department wants to allow local warehouse managers to add courier services to mitigate increases in delivery limes and remove courier services that fail to meet delivery metrics. Which two options are required increase managers to update courier service records in production? ",
+	question: "21.  An online retailer allows customers to select a courier service for deliveries. The list of available courier services is drawn from a data type sourced in the Pega database. The Fulfillment department wants to allow local warehouse managers to add courier services to mitigate increases in delivery times and remove courier services that fail to meet delivery metrics. Which two options are required increase managers to update courier service records in production? ",
     choices: [" Enable rule checkout for the local wherehous manager  AND Define an approval process for adding and removing courier services.  ", "Create an access group for local wherehouse manager  AND Delegate the records for the courier service data type. "],
     correctAnswer: 1
 },{
@@ -161,47 +161,47 @@ var questions = [{
     choices: [" To copy the first and last name properties into a single property value  To execute a flow action  To create the dependent property after case creation "],
     correctAnswer: 0
 }, 
-/*{
-	question: "41.  ",
-    choices: ["", "", "", ""],
-    correctAnswer: 0
+{
+	question: "41.  A requirement lot a hotel reservation case type states that as customers change their room selection, the total cost of the reservation updates. How do you satisfy this requirement?",
+    choices: ["Add a When condition to the room selection step.", " Configure a Validate rule for the room selection step.", " Define a declare expression for the total cost held. ", " Apply a Disable when condition to the total cost field."],
+    correctAnswer: 2
 }, {
-	question: "42.  ",
-    choices: ["", "", "", ""],
-    correctAnswer: 0
+	question: "42. How do you reference the State property on an Address page group with the index Home? ",
+    choices: [".Address.Home.State ", ".Address(Home).State ", ".Home.State.Address", ".Home(Address).State"],
+    correctAnswer: 1
 }, {
-	question: "43.  ",
-    choices: ["", "", "", ""],
-    correctAnswer: 0
+	question: "43.  A customer wants to copy the contents of a previous order to their current order. What rule type do you use to copy the order contents? ",
+    choices: [" Data page ", "Function", "Data transform", " Declare expression"],
+    correctAnswer: 2
 }, {
-	question: "44.  ",
-    choices: ["", "", "", ""],
-    correctAnswer: 0
+	question: "44.  You create an application for employees to submit timesheets. Employees enter work, vacation, and sick time for a particular week. On the entry form, employees see a summary of the total hours entered. After the employee submits the timesheet, the application displays remaining vacation and sick time for the employee. To configure the form where users enter hours, select the best configuration option to calculate the total hours for the week.  ",
+    choices: [" Use a data transform. When the user enters the form, the data transform determines the sum of the work, vacation, and sick tune properties.", " Use declarative processing. When the value of any work, vacation, or sick time changes, the total hours change. ", "Use procedural processing. When the value of any work, vacation, or sick time changes and the user submits the form, the total hours change", " Use a When rote. When the value of any work, vacation, or sick time changes, the total hours change. "],
+    correctAnswer: 1
 }, {
-	question: "45.  ",
-    choices: ["", "", "", ""],
-    correctAnswer: 0
+	question: "45.  You create an employees to submit timesheets. Employees enter week work, vacation, and sick time for a particular week. On the entry form , employees see a summary of the total hours entered. After the employee submits the timesheet, the application displays remaining vacation and sick time for the employee. You configure the user view that displays remaining vacation and sick time. The balance calculates by subtracting the vacation time and sick time for the week from the current vacation and sick time balances. Which configuration option is used to summarize the remaining vacation and sick time? ",
+    choices: [" Use pyDefault and pySetFieldDefaults. When the process invokes the data transforms, the remaining vacation and sick time calculate. ", "Use declarative processing. Whenever the vacation time or sick time entries change, the remaining vacation and sick time calculate.", "Use procedural processing with a data transform. Remaining vacation and sick time calculate after the user submits a timesheet. ", " Use a When rule. When the application references the remaining vacation and sick time, each value calculates. "],
+    correctAnswer: 3
 }, {
-	question: "46.  ",
-    choices: ["", "", "", ""],
-    correctAnswer: 0
+	question: "46.  A customer views a product available in multiple color options. The customer must select only one color for each product. Which UI control allow a developer to present the user with all color choices at once, without prompting or clicking, while ensuring that the user can only select one of the color options? ",
+    choices: ["Text input ", " Radio buttons ", " Drop-down ", " Check box "],
+    correctAnswer: 1
 }, {
-	question: "47.  ",
-    choices: ["", "", "", ""],
-    correctAnswer: 0
+	question: "47.  Which two configurations do you use to validate the minimum age of a new potential customer in the CollectAccountInformation assignment step?",
+    choices: [" Create and Edit Validate rule to check the customer age. AND Reference the Validate rule on the CollectAccountInformation flow action.  ", "Reference the Edit validate rule on the CollcctAccountlnformation assignment. AND  Create a Validate rule to check the customer age. ", " Reference the Edit Validate rule on the CollectAccountlnformation flow action. AND  Reference the Validate rule on the CollectAccountInformation assignment. "],
+    correctAnswer: 2
 }, {
-	question: "48.  ",
-    choices: ["", "", "", ""],
-    correctAnswer: 0
+	question: "48.  An application must validate postal codes for Canadian customers to match the pattern A1A 1A1, where A represents a letter and 1 represents a number. Which two configuration options allow you to ensure that a user provides a valid postal code? ",
+    choices: [" Configure an edit validate rule to test that the entered postal code conforms to the required pattern. AND  Configure the postal code field as a text property with a required input field.", " Configure a validate rule to test that the entered postal code conforms to the required pattern. AND Configure a dropdown control to select the postal code based on the specified city and province"],
+    correctAnswer: 1
 }, {
-	question: "49.  ",
-    choices: ["", "", "", ""],
-    correctAnswer: 0
+	question: "49. A requirement states: The tax identification number must contain 10 digits. How do you configure the field to support this requirement?  ",
+    choices: ["Set the minimum and maximum values to '10' in a text field- ", " Use a decimal property type and make the field required", " Configure a validate rule to test the tax identification number pattern.", " Use an edit validate rule that validates the tax identification number pattern."],
+    correctAnswer: 3
 }, {
-	question: "50.  ",
-    choices: ["", "", "", ""],
-    correctAnswer: 0
-}, {
+	question: "50.  A process routes loan requests to a specific loan officer based on the type of loan. - If the loan is a mortgage, it is routed to Adam Ross. - If the loan is for an automobile, it is routed to Julia Samuels. - If the loan is an equity line, the case is routed to Don Smith. How do you configure a router to ensure the case advances to the correct loan officer? ",
+    choices: [" Route the case to a work queue using a skilled router. ", " Route the case to a work queue using a When condition. ", "Route the case to a worklist using a skilled router. ", "Router the case to a worklist using a When condition. "],
+    correctAnswer: 1
+}, /*{
 	question: "51.  ",
     choices: ["", "", "", ""],
     correctAnswer: 0
@@ -252,7 +252,7 @@ var viewingAns = 0;
 var correctAnswers = 0;
 var quizOver = false;
 var iSelectedAnswer = [];
-	var c=900;
+	var c=3600;
 	var t;
 $(document).ready(function () 
 {
@@ -353,7 +353,7 @@ $(document).ready(function ()
 
 function timedCount()
 	{
-		if(c == 905) 
+		if(c == 3605) 
 		{ 
 			return false; 
 		}
@@ -390,7 +390,7 @@ function timedCount()
 function displayCurrentQuestion() 
 {
 
-	if(c == 905) { c = 900; timedCount(); }
+	if(c == 3605) { c = 3600; timedCount(); }
     //console.log("In display current Question");
     var question = questions[currentQuestion].question;
     var questionClass = $(document).find(".quizContainer > .question");
@@ -420,7 +420,7 @@ function resetQuiz()
     currentQuestion = 0;
     correctAnswers = 0;
 	hideScore();
-	c = 900;
+	c = 3600;
 	//$answerButton.hide();
 }
 
@@ -440,7 +440,7 @@ function hideScore()
 function viewResults() 
 {
 
-	if(currentQuestion == 32) { currentQuestion = 0;return false; }
+	if(currentQuestion == 50) { currentQuestion = 0;return false; }
 	if(viewingAns == 1) { return false; }
 
 	hideScore();
