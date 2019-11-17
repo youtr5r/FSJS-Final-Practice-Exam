@@ -420,7 +420,7 @@ function resetQuiz()
     currentQuestion = 0;
     correctAnswers = 0;
 	hideScore();
-	c = 2000;
+	c = 900;
 	//$answerButton.hide();
 }
 
