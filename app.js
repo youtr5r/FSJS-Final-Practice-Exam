@@ -358,7 +358,7 @@ function timedCount()
 			return false; 
 		}
 		
-		var hours = parseInt( c / 3600 ) % 24;
+		var hours = parseInt( c / 5000 ) % 24;
 		var minutes = parseInt( c / 60 ) % 60;
 		var seconds = c % 60;
 		var result = (hours < 10 ? "0" + hours : hours) + ":" + (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds  < 10 ? "0" + seconds : seconds);            
