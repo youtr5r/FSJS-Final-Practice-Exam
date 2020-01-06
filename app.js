@@ -50,7 +50,7 @@ var questions = [{
 {
     question: "13. A data page holds product information and has the Reload if Older Than field set to 30 minutes. The data page is created at 7:43. The user then performs the following actions: 8:10 the user refreshes the product information 8:45 the user refreshes the product information At what time is the data page reloaded? ",
     choices: ["8:10", "8:45", "8:40", "8:13"],
-    correctAnswer: 3
+    correctAnswer: 1
 }, 
 {
     question: "14. Which source do you select for a data page that contains the details of single record for a data type?",
@@ -73,7 +73,7 @@ var questions = [{
     choices: ["Summarize the regional cost centers by count.", "Summarize the purchase requests column by count.", " Use the purchase requests column to group the cost centers.", "Filter the results so that the report includes only cost center and purchase requests."],
     correctAnswer: 1
 },{
-	question: "19.  A report contains columns for Customer, Billing Cycle, Credit Card, and Expiration Date. A manager requests that the report show only those customers who meet the following conditions: - The customer is on a monthly billing cycle - The credit card is either MoreCash or Vista - The credit card expires within Which set of filtering condition returns a report with the desired data?",
+	question: "19.  A report contains columns for Customer, Billing Cycle, Credit Card, and Expiration Date. A manager requests that the report show only those customers who meet the following conditions: - The customer is on a monthly billing cycle - The credit card is either MoreCash or Vista - The credit card expires within 60 days. Which set of filtering condition returns a report with the desired data?",
     choices: ["Credit Card equals MoreCash OR Credit Card equals Vista AND Billing Cycle is not quarterly AND Expiration Date is less than 60 days ", " Credit Card equals MoreCash OR Credit Card [equals Vista AND Billing Cycle equals monthly AND Expiration Date equals next 60 days ", " Credit Card equals MoreCash AND Credit Card equals Vista AND Billing Cycle equals monthly AND Expiration Date is 60 days greater than today ", "Credit Card equals MoreCash or Vista, Billing Cycle monthly, and Expiration Date equals next 60 days "],
     correctAnswer: 0
 },{
